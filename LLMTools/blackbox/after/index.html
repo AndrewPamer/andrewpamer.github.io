@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <title>Our Grocery Store</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#cart {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+#login-form {
+    margin-bottom: 20px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#products article {
+    width: 30%;
+    margin: 1.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#products article img {
+    width: 100%;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <button id="cart">Cart</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to our Grocery Store!</h1>
+        <form id="login-form">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <section id="products">
+            <article>
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>Description of Product 1</p>
+                <button>Add to Cart</button>
+            </article>
+            <!-- More products... -->
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2022</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
