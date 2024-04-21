@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Store</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    nav {
+      display: flex;
+    }
+    
+    nav a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .cart-button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    .product {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .product img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Grocery Store</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+    </nav>
+    <a href="#" class="cart-button">Cart</a>
+  </header>
+  
+  <main>
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1">
+      <h2>Product 1</h2>
+      <p>Description of Product 1</p>
+    </div>
+    
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>Description of Product 2</p>
+    </div>
+    
+    <div class="product">
+      <img src="product3.jpg" alt="Product 3">
+      <h2>Product 3</h2>
+      <p>Description of Product 3</p>
+    </div>
+  </main>
+  
+  <footer>
+    &copy; 2024 Grocery Store. All rights reserved.
+  </footer>
+</body>
+</html>
