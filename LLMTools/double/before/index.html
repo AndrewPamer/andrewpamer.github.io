@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grocery Store Website</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
+        .header { background: #4CAF50; color: white; padding: 20px; }
+        .nav { padding: 0; margin: 0; list-style: none; text-align: center; }
+        .nav li { display: inline; margin-right: 20px; }
+        .nav a { color: white; text-decoration: none; }
+        .cart-button { position: absolute; right: 20px; top: 25px; background: #f0ad4e; color: white; padding: 10px; border: none; cursor: pointer; }
+        .main { padding: 20px; }
+        .product { float: left; width: 30%; text-align: center; padding: 15px; }
+        .product img { width: 100px; height: 100px; }
+        .footer { background: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        .form-signin { max-width: 300px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; }
+        .form-signin input { display: block; width: 100%; margin-bottom: 10px; }
+        .add-to-cart { background: #007bff; color: white; padding: 5px 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Grocery Store</h1>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <button class="cart-button">Cart</button>
+</div>
+
+<div class="main">
+    <div class="product">
+        <img src="product1.jpg" alt="">
+        <h3>Product 1</h3>
+        <p>Description of product 1</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <!-- Add more products here -->
+</div>
+
+<div class="form-signin">
+    <h2>Sign In</h2>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Sign In</button>
+</div>
+
+<div class="footer">
+    <p>&copy; 2023 Grocery Store</p>
+</div>
+
+<script>
+// JavaScript to handle adding items to the cart can be added here
+</script>
+
+</body>
+</html>
