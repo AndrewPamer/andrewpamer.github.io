@@ -1,109 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grocery Store</title>
-  <style>
-    /* CSS styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      background-color: #f2f2f2;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    
-    nav {
-      display: flex;
-    }
-    
-    nav a {
-      margin-left: 10px;
-      text-decoration: none;
-      color: #333;
-    }
-    
-    .cart-button {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    
-    main {
-      padding: 20px;
-    }
-    
-    .product {
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .product img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 5px;
-    }
-    
-    footer {
-      background-color: #f2f2f2;
-      padding: 20px;
-      text-align: center;
-      color: #777;
-      font-size: 14px;
-    }
-  </style>
+    <title>Grocery Store</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .cart-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            margin: 0;
+        }
+
+        .product p {
+            margin: 0;
+        }
+
+        .add-to-cart-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form input[type="text"],
+        form input[type="password"],
+        form input[type="submit"] {
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo">Grocery Store</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Products</a>
-    </nav>
-    <a href="#" class="cart-button">Cart</a>
-  </header>
-  
-  <main>
-    <div class="product">
-      <img src="product1.jpg" alt="Product 1">
-      <h2>Product 1</h2>
-      <p>Description of Product 1</p>
-    </div>
-    
-    <div class="product">
-      <img src="product2.jpg" alt="Product 2">
-      <h2>Product 2</h2>
-      <p>Description of Product 2</p>
-    </div>
-    
-    <div class="product">
-      <img src="product3.jpg" alt="Product 3">
-      <h2>Product 3</h2>
-      <p>Description of Product 3</p>
-    </div>
-  </main>
-  
-  <footer>
-    &copy; 2024 Grocery Store. All rights reserved.
-  </footer>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+        </nav>
+        <button class="cart-btn">Cart</button>
+    </header>
+
+    <main>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- Add more product divs as needed -->
+
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="Sign In">
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2024 Your Grocery Store
+    </footer>
+
+    <script>
+        // JavaScript code goes here
+        // You can add event listeners and perform other dynamic operations using JavaScript
+    </script>
 </body>
 </html>
