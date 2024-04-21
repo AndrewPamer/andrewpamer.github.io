@@ -1,105 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grocery Store</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Store</title>
+  <style>
+    /* CSS Styling */
     body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
     }
     header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-    }
-    nav {
-        display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     nav a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
     }
     .cart-button {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
     }
     .container {
-        max-width: 1200px;
-        margin: 20px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
     }
     .product {
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        margin: 20px;
-        width: 300px;
+      width: 30%;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: white;
     }
     .product img {
-        width: 100%;
-        border-radius: 5px;
-        margin-bottom: 10px;
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .product h3 {
+      margin-top: 10px;
+    }
+    .product p {
+      margin-top: 5px;
+    }
+    .add-to-cart {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
     }
     footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
-</style>
+  </style>
 </head>
 <body>
 
 <header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Products</a>
-    </nav>
-    <button class="cart-button" style="color: #fff; background-color: #4CAF50;">
-    Cart
-    </button>
+  <nav>
+    <a href="#" style="color: white;">Home</a>
+    <a href="#" style="color: white;">Products</a>
+    <a href="#" style="color: white;">About</a>
+  </nav>
+  <button class="cart-button">View Cart</button>
 </header>
 
 <div class="container">
-    <div class="product">
-        <img src="https://via.placeholder.com/300" alt="Product 1">
-        <h2>Product 1</h2>
-        <p>Description of product 1.</p>
-    </div>
-    <div class="product">
-        <img src="https://via.placeholder.com/300" alt="Product 2">
-        <h2>Product 2</h2>
-        <p>Description of product 2.</p>
-    </div>
-    <div class="product">
-        <img src="https://via.placeholder.com/300" alt="Product 3">
-        <h2>Product 3</h2>
-        <p>Description of product 3.</p>
-    </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/150" alt="Product 1">
+    <h3>Product 1</h3>
+    <p>Description of Product 1</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/150" alt="Product 2">
+    <h3>Product 2</h3>
+    <p>Description of Product 2</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/150" alt="Product 3">
+    <h3>Product 3</h3>
+    <p>Description of Product 3</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
 </div>
 
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+  <button type="submit" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Sign In</button>
+</form>
+
 <footer>
-    &copy; 2024 Grocery Store
+  &copy; 2024 Grocery Store
 </footer>
 
 </body>
