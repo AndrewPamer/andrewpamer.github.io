@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grocery Store</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+
+/* Header/Nav */
+header {
+background-color: #333;
+padding: 20px;
+color: white;
+}
+
+header nav {
+display: flex;
+justify-content: space-between;
+}
+
+header nav a {
+color: white;
+text-decoration: none;
+padding: 10px;
+}
+
+/* Products */
+.product {
+border: 1px solid #ddd;
+margin-bottom: 20px;
+padding: 20px;
+display: flex;
+}
+
+.product img {
+width: 200px;
+}
+
+.product-info {
+margin-left: 20px;
+}
+
+/* Footer */
+footer {
+background-color: #333;
+color: white;
+padding: 20px;
+text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">About</a>
+</nav>
+
+<button>Cart</button>
+
+</header>
+
+<!-- Products -->
+<div class="product">
+
+<img src="product1.jpg">
+
+<div class="product-info">
+<h3>Bananas</h3>
+<p>Yellow, delicious bananas.</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="product2.jpg">
+
+<div class="product-info">
+<h3>Milk</h3>
+<p>Whole milk in a carton.</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+<!-- Sign In Form -->
+<form>
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<button type="submit">Sign In</button>
+</form>
+
+<!-- Footer -->
+<footer>
+&copy; 2023 Grocery Store
+</footer>
+
+</body>
+</html>
