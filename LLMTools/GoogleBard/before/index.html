@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Mart Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      }
+  
+  header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <button id="cart-btn">Cart</button>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Fresh Mart Grocery Store!</h1>
+            <p>Your one-stop shop for all your fresh grocery needs.</p>
+            <img src="images/grocery-store-banner.jpg" alt="Fresh Mart Grocery Store Banner">
+        </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="images/apples.jpg" alt="Apples">
+                    <h3>Fresh Apples</h3>
+                    <p>A crisp and healthy snack, perfect for on-the-go or adding to recipes!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/milk.jpg" alt="Milk">
+                    <h3>Fresh Milk</h3>
+                    <p>A delicious and nutritious dairy product, essential for a healthy diet!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/bread.jpg" alt="Bread">
+                    <h3>Freshly Baked Bread</h3>
+                    <p>The perfect addition to any meal, our bread is baked fresh daily!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Fresh Mart is a family-owned grocery store committed to providing our customers with the freshest and highest quality products at affordable prices. We are passionate about healthy eating and believe that everyone deserves access to good food. We source our products locally whenever possible and support sustainable farming practices.</p>
+        </section>
+        <section id="account">
+            <h2>Sign in to Your Account</h2>
+            <form id="sign-in-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Sign In</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Fresh Mart Grocery Store <?php echo date("Y"); ?></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
